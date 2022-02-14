@@ -18,7 +18,7 @@ a {
 }
 
 .page {
-  @apply flex flex-col items-center justify-center min-w-full min-h-screen
+  @apply flex flex-col items-center justify-center min-w-full sm:min-h-screen
 }
 
 .title {
