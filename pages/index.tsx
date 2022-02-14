@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Front End Gadgets</title>
-        <meta name="description" content="Front end gadget is a demo site to learn Next"/>
+        <meta name="description" content="Frontend gadget is a demo site to learn Next"/>
       </Head>
       <Image src={image}  alt="React logo"/>
       <h1 className="title">FrontEnd Gadgets</h1>
