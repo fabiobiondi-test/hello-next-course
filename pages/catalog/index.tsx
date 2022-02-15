@@ -8,7 +8,8 @@ import { InferGetServerSidePropsType } from 'next';
 
 const API = 'https://my-json-server.typicode.com/training-api/next-course-gadgets/gadgets';
 
-export const getServerSideProps = async() => {
+// export const getServerSideProps = async() => {
+export const getStaticProps =  async() => {
   try {
     const {  data  } = await axios.get<Gadget[]>(API)
     return {
@@ -27,7 +28,7 @@ export const getServerSideProps = async() => {
 
 }
 
-function CatalogIndex({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+function CatalogIndex({ data }: InferGetServerSidePropsType<typeof getStaticProps>) {
   return (
     <>
       <Head>
